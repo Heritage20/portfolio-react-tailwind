@@ -75,14 +75,14 @@ const Landing = ({ setSelectedPage }: Props) => {
           }}
         >
           <AnchorLink
-            href=""
+            href="#contact"
             className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold hover:bg-blue hover:text-white transition duration-500"
             onClick={() => setSelectedPage("contact")}
           >
             Contact Me
           </AnchorLink>
           <AnchorLink
-            href=""
+            href="#contact"
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
             onClick={() => setSelectedPage("contact")}
           >

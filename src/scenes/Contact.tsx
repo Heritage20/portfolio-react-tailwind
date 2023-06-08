@@ -1,6 +1,7 @@
-import LineGradient from "../components/LineGradient";
-import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
+import React from "react";
+import { useForm } from "react-hook-form";
+import LineGradient from "../components/LineGradient";
 
 const Contact = () => {
   const {
@@ -9,7 +10,7 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = async (e) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     const isValid = await trigger();
 
     if (!isValid) {
@@ -73,7 +74,7 @@ const Contact = () => {
           <form
             target="_blank"
             onSubmit={onSubmit}
-            action="https://formsubmit.co/offmatten@hamham.uk"
+            action="https://formsubmit.co/c0b50bffe4ae1941cccb384758cc064f"
             method="POST"
           >
             <input
