@@ -5,6 +5,7 @@ import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
 import MySkills from "./scenes/MySkills";
 import Projects from "./scenes/Projects";
+import Testimonials from "./scenes/Testimonials";
 import LineGradient from "./components/LineGradient";
 
 const App = () => {
@@ -29,7 +30,7 @@ const App = () => {
         setSelectedPage={setSelectedPage}
         isTopOfPage={isTopOfPage}
       />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto md:min-h-0">
         {isAboveMediumScreens && (
           <DotGroup
             selectedPage={selectedPage}
@@ -39,12 +40,16 @@ const App = () => {
         <Landing setSelectedPage={setSelectedPage} />
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto md:min-h-0">
         <MySkills />
       </div>
       <LineGradient />
       <div className="w-5/6 mx-auto">
         <Projects />
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:min-h-0">
+        <Testimonials />
       </div>
     </div>
   );
