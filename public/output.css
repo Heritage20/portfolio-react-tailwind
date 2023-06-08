@@ -701,6 +701,10 @@ video {
   height: 8rem;
 }
 
+.h-64{
+  height: 16rem;
+}
+
 .h-\[350px\]{
   height: 350px;
 }
@@ -1020,6 +1024,11 @@ video {
 .text-yellow{
   --tw-text-opacity: 1;
   color: rgb(253 204 73 / var(--tw-text-opacity));
+}
+
+.text-grey{
+  --tw-text-opacity: 1;
+  color: rgb(237 237 237 / var(--tw-text-opacity));
 }
 
 .placeholder-opaque-black::-moz-placeholder{
