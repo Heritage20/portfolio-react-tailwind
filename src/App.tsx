@@ -1,19 +1,19 @@
 import { useEffect, useState } from "react";
-import useMediaQuery from "./hooks/useMediaQuery";
+// import useMediaQuery from "./hooks/useMediaQuery";
 import Navbar from "./scenes/Navbar";
-import DotGroup from "./scenes/DotGroup";
+// import DotGroup from "./scenes/DotGroup";
+import LineGradient from "./components/LineGradient";
+import Contact from "./scenes/Contact";
+import Footer from "./scenes/Footer";
 import Landing from "./scenes/Landing";
 import MySkills from "./scenes/MySkills";
 import Projects from "./scenes/Projects";
 import Testimonials from "./scenes/Testimonials";
-import Contact from "./scenes/Contact";
-import Footer from "./scenes/Footer";
-import LineGradient from "./components/LineGradient";
 
 const App = () => {
   const [selectedPage, setSelectedPage] = useState("home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
-  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+  // const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
   useEffect(() => {
     const handleScroll = () => {
