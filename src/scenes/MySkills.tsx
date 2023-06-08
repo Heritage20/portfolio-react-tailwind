@@ -1,7 +1,6 @@
 import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
-import skills from "../assets/skills-image.png";
 
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("min-width: 1060px)");
@@ -37,10 +36,18 @@ const MySkills = () => {
               className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
               before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
             >
-              <img src={skills} alt="skills" className="z-10" />
+              <img
+                src="../assets/skills-image.png"
+                alt="skills"
+                className="z-10"
+              />
             </div>
           ) : (
-            <img src={skills} alt="skills" className="z-10" />
+            <img
+              src="../assets/skills-image.png"
+              alt="skills"
+              className="z-10"
+            />
           )}
         </div>
       </div>
