@@ -32,13 +32,13 @@ const App = () => {
         setSelectedPage={setSelectedPage}
         isTopOfPage={isTopOfPage}
       />
-      <div className="w-5/6 mx-auto md:min-h-screen">
-        {isAboveMediumScreens && (
+      <div className="w-5/6 mx-auto md:min-h-screen ">
+        {/* {isAboveMediumScreens && (
           <DotGroup
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
           />
-        )}
+        )} */}
         <Landing setSelectedPage={setSelectedPage} />
       </div>
       <LineGradient />

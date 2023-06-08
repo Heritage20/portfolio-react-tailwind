@@ -1016,6 +1016,11 @@ video {
   color: rgb(1 0 38 / var(--tw-text-opacity));
 }
 
+.text-grey{
+  --tw-text-opacity: 1;
+  color: rgb(237 237 237 / var(--tw-text-opacity));
+}
+
 .text-red{
   --tw-text-opacity: 1;
   color: rgb(220 68 146 / var(--tw-text-opacity));
@@ -1024,11 +1029,6 @@ video {
 .text-yellow{
   --tw-text-opacity: 1;
   color: rgb(253 204 73 / var(--tw-text-opacity));
-}
-
-.text-grey{
-  --tw-text-opacity: 1;
-  color: rgb(237 237 237 / var(--tw-text-opacity));
 }
 
 .placeholder-opaque-black::-moz-placeholder{
